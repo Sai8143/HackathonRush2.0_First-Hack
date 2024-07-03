@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Lead Dashboard</title>
+    <link rel="stylesheet" href="Stud_dash.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar" aria-label="Main Navigation">
+            <p class="admin">Student Panel</p>
+            <button class="sidebar-btn" id="dashboard-btn">Dashboard</button>
+            <button class="sidebar-btn" id="teams-btn">Teams</button>
+            <button class="sidebar-btn" id="members-btn">Members</button>
+            <button class="sidebar-btn" id="settings-btn">Settings</button>
+        </nav>
+        <main class="main-content">
+            <section id="dashboard-section" class="section active">
+                <div class="section-header">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="section-body">
+                    <div class="header">
+                        <h1>Welcome, <span id="student-name">[Student Name]</span>!</h1>
+                        <p>Here’s an overview of your dashboard. Use the navigation menu to access various sections.</p>
+                    </div>
+                    <div class="overview">
+                        <div class="card">
+                            <h2>Upcoming Events</h2>
+                            <p>No upcoming events.</p>
+                        </div>
+                        <div class="card">
+                            <h2>Recent Activities</h2>
+                            <p>No recent activities.</p>
+                        </div>
+                        <div class="card">
+                            <h2>Important Announcements</h2>
+                            <p>No announcements yet.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="teams-section" class="section">
+                <div class="section-header">
+                    <h1>Teams</h1>
+                </div>
+                <div class="section-body">
+                    <div class="team-form">
+                        <div class="form-header">
+                            <select id="hackathon">
+                                <option value="Hack Rush 2.0">Hack Rush 2.0</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                            <select id="theme-type">
+                                <option value="Theme Type">Theme Type</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                            <select id="theme-name">
+                                <option value="Theme Name">Theme Name</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Team Name" id="team-name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Roll No" class="roll-no">
+                            <input type="text" placeholder="Name" class="name">
+                            <input type="text" placeholder="Branch-Section" class="branch-section">
+                            <input type="email" placeholder="Email" class="email">
+                            <input type="tel" placeholder="Mobile" class="mobile">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Roll No" class="roll-no">
+                            <input type="text" placeholder="Name" class="name">
+                            <input type="text" placeholder="Branch-Section" class="branch-section">
+                            <input type="email" placeholder="Email" class="email">
+                            <input type="tel" placeholder="Mobile" class="mobile">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Roll No" class="roll-no">
+                            <input type="text" placeholder="Name" class="name">
+                            <input type="text" placeholder="Branch-Section" class="branch-section">
+                            <input type="email" placeholder="Email" class="email">
+                            <input type="tel" placeholder="Mobile" class="mobile">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Roll No" class="roll-no">
+                            <input type="text" placeholder="Name" class="name">
+                            <input type="text" placeholder="Branch-Section" class="branch-section">
+                            <input type="email" placeholder="Email" class="email">
+                            <input type="tel" placeholder="Mobile" class="mobile">
+                        </div>
+                        <button class="create-team-btn">Create Team</button>
+                    </div>
+                </div>
+            </section>
+            <section id="members-section" class="section">
+                <div class="section-header">
+                    <h1>Members</h1>
+                </div>
+                <div class="section-body">
+                    <p>Manage members here.</p>
+                </div>
+            </section>
+            <section id="settings-section" class="section">
+                <div class="section-header">
+                    <h1>Settings</h1>
+                </div>
+                <div class="section-body">
+                    <p>Configure your settings here.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="Stud_dash.js"></script>
+</body>
+</html>

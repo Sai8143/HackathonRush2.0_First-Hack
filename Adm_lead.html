@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="Adm_lead.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2 class="admin">Admin Panel</h2>
+            <button id="home-btn">Dashboard</button>
+            <button id="create-hackathon-btn">Create Hackathon</button>
+            <button id="view-teams-btn">View Teams</button>
+            <button id="view-team-members-btn">View Team Members</button>
+        </div>
+        <div class="main-content">
+            <div id="home-form" class="form-container">
+                <!-- Home form content -->
+                <h2>Dashboard</h2>
+                <p>Welcome to the Admin Dashboard.</p>
+            </div>
+            <div id="create-hackathon-form" class="form-container" style="display: none;">
+                <!-- Create Hackathon form content -->
+                <h2>Create Hackathon</h2>
+                <form>
+                    <input type="text" id="home-hackathon-name" placeholder="Hackathon Name">
+                    <input type="date" id="home-date">
+                    <input type="text" id="home-duration" placeholder="Duration (e.g., 3 days)">
+                    <input type="text" id="home-timings" placeholder="Timings (e.g., 9:00 AM - 5:00 PM)">
+                    <input type="text" id="home-venue" placeholder="Venue">
+                    <select id="home-theme-type">
+                        <option value="">Select Theme Type</option>
+                        <option value="technical">Technical</option>
+                        <option value="design">Design</option>
+                        <option value="business">Business</option>
+                    </select>
+                    <select id="home-hackathon">
+                        <option value="">Select Hackathon</option>
+                        <option value="hackathon1">Hackathon 1</option>
+                        <option value="hackathon2">Hackathon 2</option>
+                        <option value="hackathon3">Hackathon 3</option>
+                    </select>
+                    <input type="text" id="home-theme-name" placeholder="Theme Name">
+                    <button type="submit" id="submit-home">Submit</button>
+                </form>
+
+            </div>
+            <div id="view-teams-form" class="form-container" style="display: none;">
+                <!-- View Teams form content -->
+                <h2>View Teams</h2>
+                <ul id="teams-list">
+                    <!-- Teams will be dynamically added here -->
+                </ul>
+            </div>
+            <div id="view-team-members-form" class="form-container" style="display: none;">
+                <!-- View Team Members form content -->
+                <h2>View Team Members</h2>
+                <form>
+                    <select id="hackathon-select">
+                        <option value="">Select Hackathon</option>
+                        <option value="hackathon1">Hackathon 1</option>
+                        <option value="hackathon2">Hackathon 2</option>
+                        <option value="hackathon3">Hackathon 3</option>
+                    </select>
+                    <input type="text" id="team-name" placeholder="Team Name">
+                    <button type="submit" id="submit-modify-team">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="Adm_lead.js"></script>
+</body>
+</html>

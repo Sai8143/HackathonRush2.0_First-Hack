@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e1f398;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.back-button-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.back-button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-button:hover,
+.back-button:active,
+.back-button:focus {
+    text-decoration: none;
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    flex-wrap: wrap;
+    max-width: 900px; /* Adjust max-width as per your design */
+}
+
+.container {
+    background: #FFEAB8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+}
+
+h2 {
+    background: #020e54;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    margin: -20px -20px 20px -20px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #A6DEAE;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #058785;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+    .login-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .login-container {
+        width: 90%;
+    }
+
+    .container {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust heading size for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .login-container {
+        width: 100%;
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .container {
+        width: 100%;
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+}

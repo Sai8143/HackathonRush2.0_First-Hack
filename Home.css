@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #020e54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.home-container {
+    text-align: center;
+    background: #FFEAB8;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Set a maximum width to center content on larger screens */
+    width: 90%; /* Ensure content is centered and not too wide on larger screens */
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login-button {
+    padding: 20px 40px;
+    font-size: 18px;
+    background: #83d68f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-button:hover {
+    background: #7b1fa2;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+    .home-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .login-button {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+}
